@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextStyle.Medium.24" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle.Medium.32" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">32sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextStyle.AppLabel" parent="TextAppearance.AppCompat.Medium">
+        <item name="fontFamily">@font/heart_blues</item>
+        <item name="android:textSize">40sp</item>
+        <item name="android:textColor">@color/yellow_sand</item>
+    </style>
+</resources>
