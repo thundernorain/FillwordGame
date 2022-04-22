@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_nav_graph"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.thundernorain.fillwordgame.presentation.fragments.MenuFragment"
+        android:label="MenuFragment" >
+        <action
+            android:id="@+id/action_menuFragment_to_difficultyChooseFragment"
+            app:destination="@id/difficultyChooseFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/difficultyChooseFragment"
+        android:name="com.thundernorain.fillwordgame.presentation.fragments.DifficultyChooseFragment"
+        android:label="DifficultyChooseFragment" >
+        <action
+            android:id="@+id/action_difficultyChooseFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.thundernorain.fillwordgame.presentation.fragments.GameFragment"
+        android:label="GameFragment" >
+        <argument
+            android:name="difficulty"
+            app:argType="com.thundernorain.fillwordgame.presentation.model.Difficulty" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.thundernorain.fillwordgame.presentation.fragments.AboutFragment"
+        android:label="AboutFragment" />
+</navigation>

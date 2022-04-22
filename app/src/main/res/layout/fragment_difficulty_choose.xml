@@ -30,7 +30,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <com.thundernorain.design_system.menu.MenuButtonView
-        android:id="@+id/playMenuButton"
+        android:id="@+id/easyDifficultyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="86dp"
@@ -40,23 +40,23 @@
         app:text="@string/difficulty_easy" />
 
     <com.thundernorain.design_system.menu.MenuButtonView
-        android:id="@+id/aboutMenuButton"
+        android:id="@+id/mediumDifficultyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playMenuButton"
+        app:layout_constraintTop_toBottomOf="@+id/easyDifficultyButton"
         app:text="@string/difficulty_medium" />
 
     <com.thundernorain.design_system.menu.MenuButtonView
-        android:id="@+id/exitMenuButton"
+        android:id="@+id/hardDifficultyButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutMenuButton"
+        app:layout_constraintTop_toBottomOf="@+id/mediumDifficultyButton"
         app:text="@string/difficulty_hard" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,5 +1,4 @@
-<resources  xmlns:tools="http://schemas.android.com/tools"
-    tools:ignore="MissingTranslation" >
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
     <string name="app_name">FillwordGame</string>
     <string name="app_description">Игра в филворд</string>
@@ -12,6 +11,8 @@
     <string name="difficulty_easy">ЛЕГКИЙ</string>
     <string name="difficulty_medium">ОБЫЧНЫЙ</string>
     <string name="difficulty_hard">СЛОЖНЫЙ</string>
-    
+
     <string name="send_word">ОТПРАВИТЬ СЛОВО</string>
+
+    <string name="about_description">Приложение для игры в филворд.\n Разработчик Фаттахов Артур.</string>
 </resources>
