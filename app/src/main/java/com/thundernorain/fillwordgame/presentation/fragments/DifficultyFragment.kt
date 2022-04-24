@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.thundernorain.fillwordgame.R
 import com.thundernorain.fillwordgame.databinding.FragmentDifficultyChooseBinding
-import com.thundernorain.fillwordgame.presentation.model.Difficulty
+import com.thundernorain.fillwordgame.domain.model.ui_model.DifficultyUiModel
 
 class DifficultyChooseFragment : Fragment(R.layout.fragment_difficulty_choose) {
 
@@ -21,20 +21,20 @@ class DifficultyChooseFragment : Fragment(R.layout.fragment_difficulty_choose) {
 
     private fun setOnClickListeners() = with(binding) {
         easyDifficultyButton.setOnClickListener {
-            navigateToGame(Difficulty.EASY)
+            navigateToGame(DifficultyUiModel.EASY)
         }
         mediumDifficultyButton.setOnClickListener {
-            navigateToGame(Difficulty.MEDIUM)
+            navigateToGame(DifficultyUiModel.MEDIUM)
         }
         hardDifficultyButton.setOnClickListener {
-            navigateToGame(Difficulty.HARD)
+            navigateToGame(DifficultyUiModel.HARD)
         }
         backArrowImageView.setOnClickListener {
             navController.navigateUp()
         }
     }
 
-    private fun navigateToGame(difficulty: Difficulty) {
+    private fun navigateToGame(difficulty: DifficultyUiModel) {
         val action = DifficultyChooseFragmentDirections
             .actionDifficultyChooseFragmentToGameFragment(difficulty)
         navController.navigate(action)

@@ -1,7 +1,7 @@
 package com.thundernorain.fillwordgame.presentation.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.thundernorain.fillwordgame.presentation.model.Difficulty
+import com.thundernorain.fillwordgame.domain.model.ui_model.DifficultyUiModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 
@@ -18,9 +18,9 @@ class GameViewModel : ViewModel() {
     private var correctWordsCountValue = 0
     private var allWordsCountValue = 0
 
-    private lateinit var difficulty: Difficulty
+    private lateinit var difficulty: DifficultyUiModel
 
-    fun onViewCreated(difficulty: Difficulty) {
+    fun onViewCreated(difficulty: DifficultyUiModel) {
         this.difficulty = difficulty
     }
 }
