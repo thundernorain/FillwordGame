@@ -1,5 +1,6 @@
 plugins {
     id 'java-library'
+    id 'kotlin'
 }
 
 java {
@@ -8,6 +9,8 @@ java {
 }
 
 dependencies {
+    // Modules
+    implementation project(':network_consts')
 
     // Serialization
     implementation 'com.google.code.gson:gson:2.9.0'

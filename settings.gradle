@@ -8,5 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "FillwordGame"
 include ':app'
-include ':server'
 include ':design_system'
+include ':network_consts'
+include ':server'

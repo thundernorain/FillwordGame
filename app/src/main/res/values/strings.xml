@@ -1,18 +1,31 @@
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 
-    <string name="app_name">FillwordGame</string>
-    <string name="app_description">Игра в филворд</string>
+    <string name="app_name" translatable="false">FillwordGame</string>
+    <string name="app_description" translatable="false">Игра в филворд</string>
 
-    <string name="play_label">ИГРАТЬ</string>
-    <string name="about_label">О РАЗРАБОТЧИКАХ</string>
-    <string name="exit_label">ВЫЙТИ</string>
+    <string name="play_label" translatable="false">ИГРАТЬ</string>
+    <string name="about_label" translatable="false">О РАЗРАБОТЧИКАХ</string>
+    <string name="exit_label" translatable="false">ВЫЙТИ</string>
 
-    <string name="choose_difficulty">Выберите уровень сложности</string>
-    <string name="difficulty_easy">ЛЕГКИЙ</string>
-    <string name="difficulty_medium">ОБЫЧНЫЙ</string>
-    <string name="difficulty_hard">СЛОЖНЫЙ</string>
+    <string name="choose_difficulty" translatable="false">Выберите уровень сложности</string>
+    <string name="difficulty_easy" translatable="false">ЛЕГКИЙ</string>
+    <string name="difficulty_medium" translatable="false">ОБЫЧНЫЙ</string>
+    <string name="difficulty_hard" translatable="false">СЛОЖНЫЙ</string>
 
-    <string name="send_word">ОТПРАВИТЬ СЛОВО</string>
+    <string name="send_word" translatable="false">ОТПРАВИТЬ СЛОВО</string>
 
-    <string name="about_description">Приложение для игры в филворд.\n Разработчик Фаттахов Артур.</string>
+    <string name="about_description" translatable="false">Приложение для игры в филворд.\n Разработчик Фаттахов Артур.</string>
+
+    <string name="server_unavailable" translatable="false">Сервер недоступен</string>
+
+    <string name="dialog_error" translatable="false">Произошла ошибка сервера, повторите попытку позже</string>
+    <string name="dialog_incorrect_word">Неверное слово :(</string>
+    <string name="dialog_answer_ok" translatable="false">Ок</string>
+
+    <string name="time_over_message" translatable="false">К сожалению время вышло :(</string>
+    <string name="win_message" translatable="false">Поздравляем!\n Вы нашли все слова</string>
+    <string name="try_again_title">Попробовать снова</string>
+
+    <string name="cancel_choosing" translatable="false">Отменить</string>
+
 </resources>

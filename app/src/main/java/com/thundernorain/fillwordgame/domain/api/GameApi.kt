@@ -7,7 +7,9 @@ import com.thundernorain.fillwordgame.domain.model.fillword_game.FillwordRespons
 
 interface GameApi {
 
-    fun getGameField(request: FillwordRequest): FillwordResponse
+    suspend fun getGameField(request: FillwordRequest): FillwordResponse
 
-    fun checkWord(request: CheckWordRequest): CheckWordResponse
+    suspend fun checkWord(request: CheckWordRequest): CheckWordResponse
+
+    suspend fun closeConnection()
 }

@@ -2,9 +2,12 @@
 <resources>
     <dimen name="rectangle_rad_default">16dp</dimen>
 
+    <dimen name="margin_small">8dp</dimen>
     <dimen name="margin_default">16dp</dimen>
     <dimen name="margin_medium">24dp</dimen>
 
     <dimen name="menu_button_height">80dp</dimen>
     <dimen name="menu_button_width">344dp</dimen>
+
+    <dimen name="game_field_item_stroke_width">4dp</dimen>
 </resources>

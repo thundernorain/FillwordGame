@@ -29,4 +29,8 @@ class GameRepositoryImpl(
         val request = CheckWordRequest(word)
         api.checkWord(request)
     }
+
+    override suspend fun closeConnection() = withContext(defaultDispatcher) {
+        api.closeConnection()
+    }
 }

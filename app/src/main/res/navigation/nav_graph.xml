@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_difficultyChooseFragment_to_gameFragment"
             app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_difficultyChooseFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -29,10 +32,33 @@
         android:label="GameFragment" >
         <argument
             android:name="difficulty"
-            app:argType="com.thundernorain.fillwordgame.presentation.model.Difficulty" />
+            app:argType="com.thundernorain.fillwordgame.domain.model.fillword_game.Difficulty" />
+        <action
+            android:id="@+id/action_gameFragment_to_gameResultFragment"
+            app:destination="@id/gameResultFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <action
+            android:id="@+id/action_gameFragment_self"
+            app:destination="@id/gameFragment" />
     </fragment>
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.thundernorain.fillwordgame.presentation.fragments.AboutFragment"
         android:label="AboutFragment" />
+    <fragment
+        android:id="@+id/gameResultFragment"
+        android:name="com.thundernorain.fillwordgame.presentation.fragments.GameResultFragment"
+        android:label="GameResultFragment" >
+        <action
+            android:id="@+id/action_gameResultFragment_to_difficultyChooseFragment"
+            app:destination="@id/difficultyChooseFragment" />
+        <action
+            android:id="@+id/action_gameResultFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
 </navigation>

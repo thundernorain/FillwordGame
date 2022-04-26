@@ -29,17 +29,27 @@
         tools:ignore="ContentDescription" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/gameFieldRecycle"
-        android:layout_width="0dp"
+        android:id="@+id/gameFieldRecyclerView"
+        android:layout_width="336dp"
         android:layout_height="0dp"
-        android:layout_marginStart="@dimen/margin_default"
         android:layout_marginTop="@dimen/margin_default"
-        android:layout_marginEnd="@dimen/margin_default"
-        android:layout_marginBottom="@dimen/margin_medium"
-        app:layout_constraintBottom_toTopOf="@+id/sendWordButton"
+        android:layout_marginBottom="@dimen/margin_default"
+        app:layout_constraintBottom_toTopOf="@+id/cancelChoosenLetterTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/restartImageView" />
+
+    <TextView
+        android:id="@+id/cancelChoosenLetterTextView"
+        style="@style/TextStyle.Medium.24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="@string/cancel_choosing"
+        app:layout_constraintBottom_toTopOf="@+id/sendWordButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:drawableLeftCompat="@drawable/ic_exit_white_24" />
 
     <com.thundernorain.design_system.menu.MenuButtonView
         android:id="@+id/sendWordButton"
@@ -94,5 +104,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/timeImageView"
         tools:text="2:50" />
+
+    <include
+        android:id="@+id/progressBar"
+        layout="@layout/layout_progress_bar"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

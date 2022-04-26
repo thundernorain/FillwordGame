@@ -5,5 +5,5 @@ import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
 val viewmodelModule = module {
-    viewModel { GameViewModel() }
+    viewModel { GameViewModel(get(), get(), get(), get(), get(), get(), get()) }
 }

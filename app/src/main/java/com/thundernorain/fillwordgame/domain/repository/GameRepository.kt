@@ -9,4 +9,6 @@ interface GameRepository {
     suspend fun getGameField(difficulty: Difficulty): FillwordResponse
 
     suspend fun checkWord(word: String): CheckWordResponse
+
+    suspend fun closeConnection()
 }
